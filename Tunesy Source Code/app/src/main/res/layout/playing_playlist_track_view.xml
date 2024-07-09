@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pptvMainContainerCL"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/transparent_clickable_bg"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/pptvTrackArtworkIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:shapeAppearanceOverlay="@style/Round2PercentSIVStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/pptvTrackInfoFlow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="pptvTrackTitleTV,pptvTrackArtistNameTV"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:flow_verticalGap="5dp"
+        app:layout_constraintStart_toEndOf="@id/pptvTrackArtworkIV"
+        app:layout_constraintTop_toTopOf="@id/pptvTrackArtworkIV"
+        app:layout_constraintBottom_toBottomOf="@id/pptvTrackArtworkIV"
+        app:layout_constraintEnd_toStartOf="@id/pptvDragTrackIB"/>
+
+    <TextView
+        android:id="@+id/pptvTrackTitleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/primary_white"
+        android:layout_gravity="bottom"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/pptvTrackArtistNameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/secondary_white"
+        android:layout_gravity="top"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        android:ellipsize="end" />
+
+    <ImageButton
+        android:id="@+id/pptvDragTrackIB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/image_desc"
+        android:padding="5dp"
+        android:src="@drawable/drag_icon"
+        android:background="@drawable/action_button_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/primary_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

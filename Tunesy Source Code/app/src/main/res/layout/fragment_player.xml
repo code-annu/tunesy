@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_black"
+    android:id="@+id/fpMainContainerCL"
+    tools:context=".main.fragments.PlayerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fpFragmentTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/now_playing"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fpClosePlayerFragmentIB"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/expand_icon"
+            app:layout_constraintBottom_toBottomOf="@id/fpFragmentTitleTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fpFragmentTitleTV"
+            app:tint="@color/primary_white_clickable" />
+
+
+        <SeekBar
+            android:id="@+id/fpPlayingTrackProgressSB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias=".6"
+            android:thumbTint="@color/primary_white"
+            android:progressTint="@color/primary_white"
+            android:progressBackgroundTint="#4DFEFFFE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fpPlayingPlaylistArtworkContainerRV" />
+
+        <TextView
+            android:id="@+id/fpPlayingTrackPlayedProgressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/secondary_white"
+            app:layout_constraintStart_toStartOf="@id/fpPlayingTrackProgressSB"
+            app:layout_constraintTop_toBottomOf="@id/fpPlayingTrackProgressSB" />
+
+        <TextView
+            android:id="@+id/fpPlayingTrackDurationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/secondary_white"
+            app:layout_constraintEnd_toEndOf="@id/fpPlayingTrackProgressSB"
+            app:layout_constraintTop_toBottomOf="@id/fpPlayingTrackProgressSB" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fpUpNextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_clickable_bg"
+            android:text="@string/up_next"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_white_clickable"
+            app:layout_constraintVertical_bias=".7"
+            app:layout_constraintTop_toTopOf="@id/fpPlayingTrackProgressSB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/fpPlayerActionButtonContainerFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:constraint_referenced_ids="fpSkipPreviousIB,fpPlayingTrackPlayPauseIB,fpSkipNextIB"
+            app:flow_horizontalGap="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/fpPlayingTrackProgressSB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fpPlayingTrackPlayPauseIB" />
+
+        <ImageButton
+            android:id="@+id/fpSkipPreviousIB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_desc"
+            android:src="@drawable/skip_previous_icon"
+            app:tint="@color/primary_white_clickable" />
+
+        <ImageButton
+            android:id="@+id/fpPlayingTrackPlayPauseIB"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_desc"
+            android:src="@drawable/play_in_circle_transparent"
+            app:tint="@color/primary_white_clickable" />
+
+        <ImageButton
+            android:id="@+id/fpSkipNextIB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_desc"
+            android:src="@drawable/skip_next_icon"
+            app:tint="@color/primary_white_clickable" />
+
+        <TextView
+            android:id="@+id/fpPlayingTrackArtistsTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_white"
+            app:layout_constraintBottom_toTopOf="@+id/fpPlayerActionButtonContainerFlow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/fpPlayingTrackTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textAlignment="center"
+            android:textColor="@color/primary_white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/fpPlayingTrackArtistsTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fpPlayingPlaylistArtworkContainerRV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="0"
+            android:orientation="horizontal"
+            app:layout_constraintVertical_bias=".15"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/fpUpNextBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fpFragmentTitleTV" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

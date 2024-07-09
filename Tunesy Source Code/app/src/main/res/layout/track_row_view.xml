@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trvMainContainerGL"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp"
+
+    android:layout_width="match_parent"
+    android:background="@drawable/transparent_clickable_bg"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/trvTrackArtworkIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:shapeAppearanceOverlay="@style/Round2PercentSIVStyle"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_rowSpan="2"/>
+
+    <TextView
+        android:id="@+id/trvTrackTitleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/primary_white"
+        android:layout_gravity="bottom"
+        android:ellipsize="end"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_columnWeight="4"
+        android:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/trvTrackArtistNameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/secondary_white"
+        android:layout_gravity="top"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_columnWeight="4"
+        android:layout_rowWeight="1" />
+
+    <ImageButton
+        android:id="@+id/trvActionMenuIB"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/image_desc"
+        android:padding="7dp"
+        android:src="@drawable/action_menu_icon"
+        android:background="@drawable/action_button_bg"
+        android:layout_gravity="center_vertical|end"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        app:tint="@color/primary_white" />
+
+</GridLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "344862089822",
+    "firebase_url": "https://tunesy-9277d-default-rtdb.firebaseio.com",
+    "project_id": "tunesy-9277d",
+    "storage_bucket": "tunesy-9277d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344862089822:android:924105b2dd7d6ee9698acf",
+        "android_client_info": {
+          "package_name": "developer.anurag.tunesy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7PvoYdvC4jx6anaRJuB6qK2VrMyCEaj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344862089822:android:fd3443aa845b640a698acf",
+        "android_client_info": {
+          "package_name": "developer.anurag.tunesytrackuploader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7PvoYdvC4jx6anaRJuB6qK2VrMyCEaj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344862089822:android:1ece555b7543728a698acf",
+        "android_client_info": {
+          "package_name": "developer.anurag.tunesytrackuploaderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7PvoYdvC4jx6anaRJuB6qK2VrMyCEaj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

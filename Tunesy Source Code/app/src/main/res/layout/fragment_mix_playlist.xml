@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_black"
+    tools:context=".main.fragments.MixPlaylistFragment">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fmpAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/fmpCollapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/primary_black"
+            android:paddingBottom="50dp"
+            android:background="@color/primary_black"
+            app:expandedTitleTextColor="@color/primary_white"
+            app:collapsedTitleTextColor="@color/primary_white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:collapsedTitleTextAppearance="@style/CollapsedToolbarTitleStyle"
+            app:expandedTitleTextAppearance="@style/ExpandedToolbarTitleStyle">
+
+            <ImageView
+                android:id="@+id/fmpMixPlaylistArtworkIV"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/image_desc"
+                android:src="@color/secondary_black"
+                app:layout_collapseMode="parallax"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+            
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/fmpToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIconTint="@color/primary_white"
+                app:navigationIcon="@drawable/back_nav_icon"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fmpTrackContainerRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fmpPlayTracksFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/play_icon"
+        android:alpha="0"
+        app:tint="@color/primary_white"
+        android:contentDescription="@string/image_desc"
+        app:shapeAppearanceOverlay="@style/CircularFABStyle"
+        app:backgroundTint="@color/primary_black"
+        app:layout_anchor="@id/fmpCollapsingToolbarLayout"
+        app:layout_anchorGravity="end|bottom" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

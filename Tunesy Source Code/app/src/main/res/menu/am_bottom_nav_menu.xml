@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnmHomeMI"
+        android:icon="@drawable/bottom_navigation_home_drawable"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/bnmSearchMI"
+        android:icon="@drawable/bottom_navigation_search_drawable"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/bnmLibraryMI"
+        android:icon="@drawable/bottom_navigation_library_drawable"
+        android:title="@string/library" />
+
+</menu>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_black"
+    tools:context=".MainActivity">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/amMainFragmentContainerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <GridLayout
+        android:id="@+id/amMiniPlayerContainerGL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:alpha="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="8dp"
+        android:background="@color/secondary_black"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/amBottomNavigation">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/amMiniPlayerPlayingTracksContainerRV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_columnWeight="2"
+            android:layout_column="0"
+            android:layout_row="0"/>
+
+        <ImageButton
+            android:id="@+id/amMiniPlayerPlayPauseIB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/play_icon"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@string/image_desc"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary_white_clickable"
+            android:layout_column="1"
+            android:layout_row="0" />
+
+        <ProgressBar
+            android:id="@+id/amMiniPlayerPlayedPB"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:progress="0"
+            android:progressBackgroundTint="#4DFEFFFE"
+            android:progressTint="@color/primary_white"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="2"/>
+
+    </GridLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/amBottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/am_bottom_nav_menu"
+        android:paddingTop="45dp"
+        app:itemPaddingTop="25dp"
+        app:itemPaddingBottom="10dp"
+        app:itemActiveIndicatorStyle="@style/BottomNavigationActiveIndicatorStyle"
+        app:itemTextAppearanceInactive="@style/BottomNavigationInActiveTextStyle"
+        app:itemTextAppearanceActive="@style/BottomNavigationActiveTextStyle"
+        android:background="@drawable/bottom_navigation_bg"
+        app:itemIconSize="27dp"
+        app:itemTextAppearanceActiveBoldEnabled="false"
+        app:itemIconTint="@color/bottom_navigation_item_color"
+        app:itemTextColor="@color/bottom_navigation_item_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

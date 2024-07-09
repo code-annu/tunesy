@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tcvMainContainerCL"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/transparent_clickable_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tcvTrackArtworkIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_desc"
+        android:scaleType="centerCrop"
+        android:src="@color/secondary_black"
+        app:shapeAppearanceOverlay="@style/Round2PercentSIVStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tcvTrackArtworkIVCover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#1A121313"
+        app:layout_constraintStart_toStartOf="@id/tcvTrackArtworkIV"
+        app:layout_constraintEnd_toEndOf="@id/tcvTrackArtworkIV"
+        app:layout_constraintTop_toTopOf="@id/tcvTrackArtworkIV"
+        app:layout_constraintBottom_toBottomOf="@id/tcvTrackArtworkIV"/>
+
+    <ImageButton
+        android:id="@+id/tcvTrackPlayPauseIB"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/play_in_circle_icon"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/image_desc"
+        app:layout_constraintStart_toStartOf="@id/tcvTrackArtworkIV"
+        app:layout_constraintEnd_toEndOf="@id/tcvTrackArtworkIV"
+        app:layout_constraintTop_toTopOf="@id/tcvTrackArtworkIV"
+        app:layout_constraintBottom_toBottomOf="@id/tcvTrackArtworkIV"/>
+
+
+    <TextView
+        android:id="@+id/tcvTrackTitleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/primary_white"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tcvTrackArtworkIV"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

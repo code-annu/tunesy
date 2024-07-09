@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_black">#121313</color>
+    <color name="primary_black_dark">#0b0a0a</color>
+    <color name="secondary_black">#2a2a2a</color>
+    <color name="primary_white">#fefffe</color>
+    <color name="secondary_white">#b4b4b4</color>
+    <color name="primary_blue">#25d1db</color>
+    <color name="yellow">#FAC72E</color>
+    <color name="green">#00ff00</color>
+    <color name="pink">#E91E63</color>
+    <color name="violet">#A700FF</color>
+    <color name="graphite">#4d4c4d</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationActiveIndicatorStyle" >
+        <item name="android:color">@color/primary_blue</item>
+    </style>
+
+    <style name="BottomNavigationInActiveTextStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BottomNavigationActiveTextStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="AppbarTitleStyle">
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FH_ContainerTitleTVStyle">
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+
+
+
+
+    <style name="PlayAllTVStyle">
+        <item name="android:textColor">@color/primary_black</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/primary_blue_clickable_bg</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="Round2PercentSIVStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">2%</item>
+    </style>
+
+    <style name="Round10PercentSIVStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">3%</item>
+    </style>
+
+    <style name="CircularFABStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ExpandedToolbarTitleStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="CollapsedToolbarTitleStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Tunesy</string>
+    <string name="title_home">Home</string>
+    <string name="search">Search</string>
+    <string name="library">Library</string>
+    <string name="image_desc">Image</string>
+    <string name="mixed_for_you">Mixed for you</string>
+    <string name="random_mix">Random mix</string>
+    <string name="quick_picks">Quick picks</string>
+    <string name="random_picks">Random picks</string>
+    <string name="quick_mix">Quick mix</string>
+    <string name="play_all">Play all</string>
+
+    <string-array name="track_container_titles">
+        <item>Quick picks</item>
+        <item>Picked for you</item>
+        <item>Trending picks</item>
+    </string-array>
+
+    <string-array name="mix_playlist_container_titles">
+        <item>Random mix</item>
+        <item>Quick mix</item>
+        <item>Community mix</item>
+        <item>Special mix</item>
+        <item>Trending Mix</item>
+        <item>Mixed for you</item>
+    </string-array>
+
+    <string name="search_songs_artists">Search songs, artists…</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="up_next">Up Next</string>
+    <string name="functionality_not_added">Functionality not added!</string>
+
+    <string-array name="artist_names">
+        <item>Add artist</item>
+        <item>AP Dhillon</item>
+        <item>Karan Aujla</item>
+        <item>Mankirt Aulakh</item>
+        <item>Shubh</item>
+        <item>Sukha</item>
+        <item>Arjan Dhillon</item>
+        <item>Harnoor</item>
+        <item>Zehr Vibe</item>
+        <item>Tegi Pannu</item>
+        <item>The Landers</item>
+        <item>Gur Sidhu</item>
+        <item>Navaan Sandhu</item>
+        <item>Jassa Dhillon</item>
+        <item>Ammy Virk</item>
+        <item>Amrit Maan</item>
+        <item>Jass Manak</item>
+        <item>Jordan Sandhu</item>
+        <item>Amrinder Gill</item>
+        <item>Guru Randhawa</item>
+        <item>Diljit Dosanjh</item>
+        <item>Ranjit Bawa</item>
+        <item>Parmish Verma</item>
+        <item>Laddi Chahal</item>
+        <item>Akhil</item>
+        <item>Sukh-E</item>
+        <item>Raftaar</item>
+        <item>Yo Yo Honey Singh</item>
+        <item>Pav Dharia</item>
+        <item>Dhanda Nyoliwala</item>
+        <item>Kabira</item>
+        <item>Masoom Sharma</item>
+        <item>Raju Punjabi</item>
+        <item>Renuka Panwar</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
